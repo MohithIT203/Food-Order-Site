@@ -1,0 +1,55 @@
+.select__option {
+  background-color: var(--card-bg) !important;
+  color: var(--text-color) !important;
+}
+
+.select__option--is-focused {
+  background-color: #efab7e !important;
+  color: white !important;
+}
+
+.select__option--is-selected {
+  background-color: var(--accent) !important;
+  color: white !important;
+}
+
+.select__control {
+  background-color: var(--card-bg) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 8px !important;
+  min-height: 42px !important;
+  box-shadow: none !important;
+}
+
+.select__control--is-focused {
+  border-color: var(--accent) !important;
+  box-shadow: 0 0 0 3px rgba(255, 102, 0, 0.15) !important;
+}
+
+.select__menu {
+  background-color: var(--card-bg) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+}
+
+.select__single-value {
+  color: var(--text-color) !important;
+}
+
+.select__input-container {
+  color: var(--text-color) !important;
+}
+
+.select__indicator svg {
+  fill: var(--text-secondary) !important;
+}
+
+.select__indicator-separator {
+  background-color: var(--border) !important;
+}
+
+/* .select__menu-list {
+  max-height: 20px !important;
+  overflow-y: auto !important;
+} */

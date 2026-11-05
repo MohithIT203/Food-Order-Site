@@ -1,0 +1,158 @@
+.modal {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  width: 90%;
+  max-width: 500px;
+  animation: fade-slide-up 0.25s ease-out;
+}
+
+.modal::backdrop {
+  background: var(--modal-backdrop);
+  backdrop-filter: blur(4px);
+}
+
+@keyframes fade-slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(40px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.modify-item-modal {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.modify-item-modal h2 {
+  margin: 0;
+  font-size: 20px;
+  text-align: center;
+  color: var(--primary);
+}
+
+.modify-item-modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.modify-item-modal label {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.modify-item-modal input,
+.modify-item-modal textarea,
+.modify-item-modal select {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 10px;
+  font-size: 14px;
+  background: transparent;
+  color: var(--text-color);
+  transition:
+    border 0.2s,
+    box-shadow 0.2s;
+}
+
+.modify-item-modal input:focus,
+.modify-item-modal textarea:focus,
+.modify-item-modal select:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(255, 102, 0, 0.2);
+}
+
+.modify-item-modal textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.modal-buttons button[type="submit"] {
+  flex: 1;
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.modal-buttons button[type="button"] {
+  flex: 1;
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-color);
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.modal-buttons button:hover {
+  opacity: 0.9;
+}
+
+.modal-actions {
+  display: flex;
+  width: 100%;
+
+  gap: 10px;
+}
+.cancel-btn,
+.confirm-btn {
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  color: var(--text-color);
+  cursor: pointer;
+}
+.cancel-btn {
+  background-color: red;
+  color: white;
+}
+.confirm-btn {
+  box-shadow: 0 0 0 1px rgba(255, 102, 0, 0.2);
+  color: black;
+}
+@media (max-width: 480px) {
+  .modal {
+    padding: 15px;
+    width: 95%;
+  }
+
+  .modal-buttons {
+    flex-direction: column;
+  }
+}
+
+.field-error {
+  display: block;
+  color: #e53e3e;
+  font-size: 0.78rem;
+  margin-top: 3px;
+}
+
+.input-error {
+  border-color: #e53e3e !important;
+  outline-color: #e53e3e;
+}

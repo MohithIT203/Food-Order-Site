@@ -1,0 +1,36 @@
+
+
+body {
+  background-color: var(--background);
+  color: var(--text-color);
+  margin: 0;
+}
+
+:root {
+  --background: #fff8f0;             
+  --card-bg: #fff4e6;
+  --header-bg: #f7c6a1;
+  --primary: #ff6600;
+  --accent: #ff6600;
+  --border: #e0cfa0;
+  --text-color: #333333;
+  --text-secondary: #666666;
+  --modal-bg: #e4ddd4;
+  --modal-backdrop: rgba(0, 0, 0, 0.55);
+  --login-background:linear-gradient(145deg, #ff6b00 0%, #ff8c00 50%, #ffb347 100%);
+}
+
+
+[data-theme="dark"] {
+  --background: #121212;
+  --card-bg: #1e1e1e;
+  --header-bg: #1f1f1f;
+  --primary: #ff6f3c;
+  --accent: #ffa85c;
+  --border: #575656;
+  --text-color: #e0e0e0;
+  --text-secondary: #b0b0b0;
+  --modal-bg: #2c2c2c;
+  --modal-backdrop: rgba(0, 0, 0, 0.75);
+  --login-background:#3d3b3b;
+}

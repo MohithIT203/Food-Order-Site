@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Veg Burger",
+    "description": "Crispy veggie patty with fresh lettuce and mayo",
+    "price": 120,
+    "category": "Veg",
+    "image": "https://images.unsplash.com/photo-1606755962773-d324e0a13086"
+  },
+  {
+    "id": 2,
+    "name": "Chicken Burger",
+    "description": "Grilled chicken patty with spicy sauce ",
+    "price": 150,
+    "category": "Non-Veg",
+    "image": "https://images.unsplash.com/photo-1550547660-d9450f859349"
+  },
+  {
+    "id": 3,
+    "name": "Margherita Pizza",
+    "description": "Classic cheese pizza with fresh basil",
+    "price": 250,
+    "category": "Veg",
+    "image": "https://content.jwplatform.com/v2/media/Bt9tKjiM/poster.jpg?width=720"
+  },
+  {
+    "id": 4,
+    "name": "Pepperoni Pizza",
+    "description": "Loaded with pepperoni and mozzarella cheese",
+    "price": 300,
+    "category": "Non-Veg",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSqgBa-OgvLfgJSI4G2_E27Mc33xKMEdtW0Q&s"
+  },
+  {
+    "id": 5,
+    "name": "French Fries",
+    "description": "Crispy golden fries with salt",
+    "price": 100,
+    "category": "Veg",
+    "image": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877"
+  },
+  {
+    "id": 6,
+    "name": "Cold Coffee",
+    "description": "Chilled coffee with milk and ice cream",
+    "price": 90,
+    "category": "Drinks",
+    "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93"
+  }
+]
